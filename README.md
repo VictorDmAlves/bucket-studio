@@ -3,7 +3,7 @@
 # ComfyUI Bucket Studio
 **A local dataset preparation tool for OneTrainer.**
 
-![Bucket Studio Screenshot](./assets/main.jpg)
+![Bucket Studio Screenshot](./assets/main.png)
 </div>
 
 Bucket Studio is a local, offline-first dataset preparation tool for OneTrainer, featuring image cropping, bucket analysis and optimization, multi-resolution simulation, AI-powered captioning with Ollama, and bulk caption editing; all using a simple integration with Ollama and displaying it with HTML.
