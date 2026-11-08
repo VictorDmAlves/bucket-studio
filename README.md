@@ -3,7 +3,7 @@
 # ComfyUI Bucket Studio
 **A local dataset preparation tool for OneTrainer.**
 
-![Bucket Studio Screenshot](./assets/main.png)
+![Bucket Studio Screenshot](./assets/main.jpg)
 </div>
 
 Bucket Studio is a local, offline-first dataset preparation tool for OneTrainer, featuring image cropping, bucket analysis and optimization, multi-resolution simulation, AI-powered captioning with Ollama, and bulk caption editing; all using a simple integration with Ollama and displaying it with HTML.
@@ -33,6 +33,8 @@ Update
 
 On macOS/Linux, run `./start-local.sh` instead of the Windows launcher.
 
+![Interface Screenshot](./assets/interface.png)
+
 ### Running the single HTML file
 Opening `index.html` directly still supports **all existing bucketing, crop and export functionality without Python or Ollama**. Direct Ollama calls may be blocked by browser origin/CORS rules, especially with `file://`. If connection tests fail, use the included local launcher rather than opening CORS access broadly. It serves the web app and forwards requests to the chosen Ollama API from your PC, avoiding browser CORS issues.
 
@@ -54,7 +56,7 @@ The **Buckets** tab includes a stochastic **Multi-resolution risk simulator** ab
 
 **Illustrative example:** a synthetic dataset with 60 photos grouped into even-sized aspect buckets and `batch size = 2` can show 60/60 in each isolated 512 and 768 scenario, yet a mixed random-assignment simulation can still leave samples out. These sample diagnostics are **not** guaranteed predictions for any user's real dataset.
 
-Source context: [OneTrainer data-loader cache sorting](https://github.com/Nerogar/OneTrainer/blob/master/modules/dataLoader/mixin/DataLoaderText2ImageMixin.py), [MGDS bucketing/sorting explanation](https://github.com/Nerogar/OneTrainer/discussions/793), and [OneTrainer multi-resolution documentation](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki/Training).
+Source context: [OneTrainer data-loader cache sorting](https://github.com/Nerogar/OneTrainer/blob/master/modules/dataLoader/mixin/DataLoaderText2ImageMixin.py) | [MGDS bucketing/sorting explanation](https://github.com/Nerogar/OneTrainer/discussions/793) | [OneTrainer multi-resolution documentation](https://github-wiki-see.page/m/Nerogar/OneTrainer/wiki/Training)
 
 ## Caption presets
 | Preset | Default guidance | Target length |
