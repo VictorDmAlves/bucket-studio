@@ -1,6 +1,6 @@
 <div align="center">
 
-# ComfyUI Bucket Studio
+# Bucket Studio
 **A local dataset preparation tool for OneTrainer.**
 
 ![Bucket Studio Screenshot](./assets/main.png)
